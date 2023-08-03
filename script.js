@@ -29,7 +29,7 @@ function handleSymbol(symbol) {
       runningTotal = 0
       break
     case '←':
-      if (buffer.length ===1) {
+      if (buffer.length === 1) {
         buffer = '0'
       } else {
         buffer = buffer.substring(0, buffer.length - 1)
@@ -73,7 +73,7 @@ function flushOperation(intBuffer) {
 }
 
 function handleNumber(numberString) {
-  if (buffer === "0") {
+  if (buffer === '0') {
     buffer = numberString
   } else {
     buffer += numberString
@@ -81,12 +81,11 @@ function handleNumber(numberString) {
 }
 
 function init() {
-  document.querySelector('.calc-buttons').addEventListener(
-    'click',
-    function (event) {
+  document
+    .querySelector('.calc-buttons')
+    .addEventListener('click', function (event) {
       buttonClick(event.target.innerText)
-    }
-  )
+    })
 }
 
 init()

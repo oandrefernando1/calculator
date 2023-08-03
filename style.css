@@ -13,9 +13,9 @@ html {
 
 body {
   align-items: center;
-  background: #2d4a22;
+  background-color: #2d4a22;
   display: flex;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-display: swap;
   height: inherit;
   justify-content: center;
@@ -101,4 +101,15 @@ body {
 
 .triple {
   flex-basis: 73%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 2rem 0;
+  color: #f0f2f5;
+  opacity: 0.6;
 }
